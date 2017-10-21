@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+    <form name="calc">
+        Number 1:<input type="text" name="txtnum1"><br>
+        Number 2:<input type="text" name="txtnum2"><br>
+        SUM:<input type="text" name="txtsum"><br>
+        <input type="button" value="Add" onClick="addnum()">
+    </form> 
+    
+    
+    <script>
+    function addnum(){
+        var num1,num2,sum;
+        num1=Number(document.calc.txtnum1.value);
+        num2=Number(document.calc.txtnum2.value);
+        sum=num1+num2;
+        document.calc.txtsum.value=sum;
+    }
+    </script>
+</body>
+</html>
